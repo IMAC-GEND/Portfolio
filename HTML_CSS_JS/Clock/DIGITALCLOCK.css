@@ -1,0 +1,43 @@
+{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #229954;
+}
+h1 {
+	position: right;
+	margin-right: 20px;
+	top: 100px;
+	text-align: center;
+	font-size: 50px;
+	color: #e67e22;
+	text-shadow: 2px 2px 3px #000;
+}
+h2 {
+    position: absolute;
+	margin-right: 20px;
+	top: 240px;
+	text-align: center;
+	font-size: 70px;
+	color: #e67e22;
+	text-shadow: 2px 2px 3px #000;
+	font-style: ;
+	font-family: freestyle script;
+}
+input{
+	width: 300px;
+	height: 55px;
+	border: none;
+	font-size: 40px;
+	text-align: center;
+	background: #000;
+	color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
