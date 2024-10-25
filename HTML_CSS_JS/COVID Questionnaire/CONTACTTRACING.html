@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CONTACT TRACING</title>
+	<!--BLANK THE href-->
+	<link rel="stylesheet" href="D:\CPE Files\BS COMPUTER ENGINEERING\BSCpE - 2GF\1st Semester\DATABASE (Lab)\CONTACTTRACING.css">
+</head>
+<style>
+.background_image{
+	background-image: url("https://pubmiddleware.mims.com/treatmentguideline/image/coronavirus%20disease%202019%20(covid-19)");
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+.monospace {
+      font-family: "Courier New", Courier, monospace;
+    }
+.personal_info{
+	background-color:rgb(237, 106, 106, 0.6); 
+	margin: auto; 
+	width: 1000px; 
+	padding:20px;
+}
+</style>
+<h1>
+	<ul>
+	<div style="background-color:rgb(255, 255, 255); 
+				text-align: right; 
+				width:1460px; 
+				position: fixed; 
+				top: 0; 
+				left: 0; 
+				right: 0; 
+				z-index: 1000; 
+				padding: 30px">
+		<li ><a href="#"><b>Home</b></a></li>
+		<li  class="active"><a href="#"><b>Survey</b></a></li>
+		<li ><a href="#"><b>Gallery</b></a></li>
+		<li ><a href="#"><b>Data</b></a></li>
+		<li ><a href="#"><b>About</b></a></li>
+		<li ><a href="#"><b>Contact</b></a></li>
+	</div>
+	</ul>
+</h1>
+
+<br><br><br><br>
+
+<h2>
+<div style="background-color:rgb(187, 0, 0); 
+			text-align: center; 
+			margin: auto; 
+			width: 1430px; 
+			padding:20px;">
+	<font text-align="center" 
+		  size="6px" 
+		  color="white" 
+		  face="courier">
+		ASSESSMENT QUESTIONAIRE POTENTIAL RISK FACTORS FOR COVID-19 INFECTION
+		<br>
+	</font>
+</div>
+</h2>
+
+<hr width="1450px"></hr>
+<br>
+<body class = "background_image">
+<form class = "personal_info">
+	<table class = "monospace">
+		<tr>
+			<td>
+				<b>COMPLETE NAME :</b> 
+			</td>
+			<td>
+				<input type="text" placeholder="Last Name,                      First Name,                               MI" name="" size="50">
+			</td>
+			<br>
+			<!--30 &nbsp-->
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>AGE :</b>
+			</td>
+			<td>
+				<input type="status" name="" size="6">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<b>GENDER:</b>
+			</td>
+			<td> 
+				<b>
+				<input type="radio" name="Gender">Male
+                <input type="radio" name="Gender">Female
+				</b>
+			</td>
+			<!--22 &nbsp-->
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<b>CIVIL STATUS:</b>
+			</td>
+			<td>
+				<select>
+					<option>Single</option>
+					<option>Married</option>
+					<option>Divorced</option>
+					<option>Widowed</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<br><br>
+				<b>STUDENT:</b>
+			</td>
+			<td>
+				<br><br>
+				<B>
+				<input type="radio" name="rvsp">YES
+                <input type="radio" name="rvsp">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<b>PRESENT ADDRESS:</b>
+			</td>
+			<td>
+				<input type="text" placeholder="Purok No., Barangay, Municipality, Province" name="" size="50">
+			</td>
+			<!--25 &nbsp-->
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<B>BIRTHDAY :</B>
+			</td>
+			<td>
+				<input type="DATE" placeholder="YEAR">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>PHONE NUMBER:</B>
+			</td>
+			<td>
+				<select>
+					<option>Smart</option>
+					<option>Globe</option>
+					<option>TNT</option>
+					<option>Sun</option>
+				</select>
+				<input type="Phone"placeholder="09*********" name="" size="20">
+			</td>
+			<!--29 &nbsp-->
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<B>TIME :</B>
+			</td>
+			<td>
+				<input type="TIME" placeholder="hours and minutes">
+			</td>
+		</tr>
+	</table>
+	<table class = "monospace">
+		<tr>
+			<p>
+			<td>
+				<br>
+				<hr width="1000px"></hr>
+				<br>
+				<b>
+				HAVE YOU VISITED ANY COUNTRIES/AREA 
+				WITH KNOWN POSITIVE COVID-19 CASES WITHIN THE LAST 14-20 DAYS?
+				</b>
+			</td>
+			</p>
+		</tr>
+		<tr>
+			<td>
+				<br>
+				<B>
+				<input type="radio" id="YES" name="HAVE YOU VISITED ANY COUNTRIES/AREA 
+				WITH KNOWN POSITIVE COVID-19 CASES WITHIN THE LAST 14-20 DAYS?">YES
+                <input type="radio" id="NO" name="HAVE YOU VISITED ANY COUNTRIES/AREA 
+				WITH KNOWN POSITIVE COVID-19 CASES WITHIN THE LAST 14-20 DAYS?">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<p>
+			<td>
+				<br><br>
+				<b>
+				HAVE YOU HAD CLOSE CONTACT WITH CONFIRMED CASE OF COVID-19?
+				</b>
+			</td>
+			</p>
+		</tr>
+		<tr>
+			<td>
+				<br>
+				<B>
+				<input type="radio" id="YES" name="HAVE YOU HAD CLOSE CONTACT WITH CONFIRMED CASE OF COVID-19?">YES
+                <input type="radio" id="NO" name="HAVE YOU HAD CLOSE CONTACT WITH CONFIRMED CASE OF COVID-19?">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<p>
+			<td>
+				<br>
+				<br>
+				<b>
+				HAVE YOU HAD CLOSE CONTACT WITH PROBABLE/SUSPECTED CASE OF COVID-19?
+				</b>
+			</td>
+			</p>
+		</tr>
+		<tr>
+			<td>
+				<br>
+				<B>
+				<input type="radio" id="YES" name="HAVE YOU HAD CLOSE CONTACT WITH PROBABLE/SUSPECTED CASE OF COVID-19?">YES
+                <input type="radio" id="NO" name="HAVE YOU HAD CLOSE CONTACT WITH PROBABLE/SUSPECTED CASE OF COVID-19?">NO
+				</B>
+			</td>
+		</tr>
+	</table>
+	<table class = "monospace">
+		<tr>
+			<br>
+			<hr width="1000px"></hr>
+			<td>
+				<br>
+				<font color="black" face="courier" size="4px">
+					<b>
+						<!--4 &nbsp-->
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						PLEASE INDICATE IF YOU ARE EXPERIENCING THE FOLLOWING SYMPTOMS:
+					</b>
+				</font>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>
+					<br><br>
+					1. Sore Throat
+				</B>
+			</td>
+			<td>
+				<br><br>
+				<B>
+				<input type="radio" id="YES" name="Sore Throat">YES
+                <input type="radio" id="NO" name="Sore Throat">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>2. Cough</B>
+			</td>
+			<td>
+				<B>
+				<input type="radio" id="YES" name="Cough">YES
+                <input type="radio" id="NO" name="Cough">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>3. Runny Nose</B>
+			</td>
+			<td>
+				<B>
+				<input type="radio" id="YES" name="Runny Nose">YES
+                <input type="radio" id="NO" name="Runny Nose">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>4. Shortness of breath</B>
+			</td>
+			<td>
+				<B>
+				<input type="radio" id="YES" name="Shortness of breath">YES
+                <input type="radio" id="NO" name="Shortness of breath">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>5. Chills</B>
+			</td>
+			<td>
+				<B>
+				<input type="radio" id="YES" name="Chills">YES
+                <input type="radio" id="NO" name="Chills">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>6. Nausea</B>
+			</td>
+			<td>
+				<B>
+				<input type="radio" id="YES" name="Nausea">YES
+                <input type="radio" id="NO" name="Nausea">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>7. Diarrhea/LBM</B>
+			</td>
+			<td>
+				<B>
+				<input type="radio" id="YES" name="Diarrhea/LBM">YES
+                <input type="radio" id="NO" name="Diarrhea/LBM">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>8. Headaches</B>
+			</td>
+			<td>
+				<B>
+				<input type="radio" id="YES" name="Headaches">YES
+                <input type="radio" id="NO" name="Headaches">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>9. Joint aches</B>
+			</td>
+			<td>
+				<B>
+				<input type="radio" id="YES" name="Joint aches">YES
+                <input type="radio" id="NO" name="Joint aches">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>10. Muscle aches</B>
+			</td>
+			<td>
+				<B>
+				<input type="radio" id="YES" name="Muscle aches">YES
+                <input type="radio" id="NO" name="Muscle aches">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>11. General Malaise</B>
+			</td>
+			<td>
+				<B>
+				<input type="radio" id="YES" name="General Malaise">YES
+                <input type="radio" id="NO" name="General Malaise">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>12. Loss of appetite</B>
+			</td>
+			<td>
+				<B>
+				<input type="radio" id="YES" name="Loss of appetite">YES
+                <input type="radio" id="NO" name="Loss of appetite">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>13. Loss of smell</B>
+			</td>
+			<td>
+				<B>
+				<input type="radio" id="YES" name="Loss of smell">YES
+                <input type="radio" id="NO" name="Loss of smell">NO
+				</B>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<B>14. Loss of taste</B>
+			</td>
+			<td>
+				<B>
+				<input type="radio" id="YES" name="Loss of taste">YES
+                <input type="radio" id="NO" name="Loss of taste">NO
+				</B>
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<br>
+			<hr width="1000px"></hr>
+			<br>
+			<td>
+				OTHER SYMPTOMS :
+			</td>
+			<td>
+				<input type="mail" 
+				placeholder="Please specify..." 
+				name="" 
+				size="120" 
+				height = "40px" 
+				width = "500px" 
+				padding = "10px">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<br>
+            <td>
+				<br>
+				REMARKS :
+			</td>
+			<td>
+				<br>
+				<input type="remarks" placeholder="Others" name="" size="130">
+			</td>
+		</tr>
+	</table>
+	<br><br>
+	<table>
+		<tr>
+			<th>
+				<button type="submit" 
+				style="background-color: #ff0000; 
+				color: white; 
+				font-size: 16px; 
+				padding: 10px 20px; 
+				border: none; 
+				border-radius: 8px; 
+				cursor: pointer;">
+				SUBMIT
+				</button>
+			</th>
+		</tr>
+	</table>
+	<br>
+</form>
+</body>
+</html>
