@@ -1,0 +1,31 @@
+D:/MODELSIM/AA.v {2 {vlog -work work -stats=none {D:\MODELSIM\AA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module AA
+** Warning: D:\MODELSIM\AA.v(43): (vlog-2182) 'SGPR' might be read before written in always_comb or always @* block.
+
+Top level modules:
+	AA
+
+} {} {}} D:/MODELSIM/ALtb.v {1 {vlog -work work -stats=none {D:\MODELSIM\ALtb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALtb
+
+Top level modules:
+	ALtb
+
+} {} {}} D:/MODELSIM/AAtb.v {1 {vlog -work work -stats=none {D:\MODELSIM\AAtb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module AAtb
+
+Top level modules:
+	AAtb
+
+} {} {}} D:/MODELSIM/AL.v {2 {vlog -work work -stats=none {D:\MODELSIM\AL.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module AL
+** Warning: D:\MODELSIM\AL.v(57): (vlog-2182) 'SGPR' might be read before written in always_comb or always @* block.
+
+Top level modules:
+	AL
+
+} {} {}}
