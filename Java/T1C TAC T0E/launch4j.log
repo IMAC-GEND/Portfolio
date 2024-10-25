@@ -1,0 +1,18 @@
+
+
+Version:	3.50
+CmdLine:	D:\CpE Programming\T1CTACT0Egame\T1CTACT0E.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	D:\CpE Programming\T1CTACT0Egame\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	D:\CpE Programming\T1CTACT0Egame\jre1.8.0_202\bin
+Check launcher:	D:\CpE Programming\T1CTACT0Egame\jre1.8.0_202\bin\javaw.exe (OK)
+Version string: 1.008.000_202 / 64-Bit (OK)
+Launcher:	D:\CpE Programming\T1CTACT0Egame\jre1.8.0_202\bin\javaw.exe
+Launcher args:	-jar "D:\CpE Programming\T1CTACT0Egame\T1CTACT0E.exe"
+Args length:	53/32768 chars
+Exit code:	0
