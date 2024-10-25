@@ -1,0 +1,47 @@
+module rollingCLOCK_50, HEX0,HEX1,HEX2,HEX3,SW);
+input [2:0] SW;
+input CLOCK_50;
+output [6:0] HEX0, HEX1, HEX2, HEX3;
+
+reg [6:0] letter1, letter2, letter3, letter4;
+
+assign HEX0 = {1'b1, letter1};
+assign HEX1 = {1'b1, letter2};
+assign HEX2 = {1'b1, letter3};
+assign HEX3 = {1'b1, letter4};
+
+always @(posedge CLOCK_50)
+begin
+	case(SW)
+		3'b000:
+			begin
+				letter1 <= 7'b0011001;
+				letter2 <= 7'b0000110;
+				letter3 <= 7'b0001100;
+				letter4 <= 7'b1000110;
+			end
+		3'b001:
+			begin
+				letter1 <= 7'b1000110;
+				letter2 <= 7'b0011001;
+				letter3 <= 7'b0000110;
+				letter4 <= 7'b0001100;
+			end
+		3'b010:
+			begin
+				letter1 <= 7'b0001100;
+				letter2 <= 7'b1000110;
+				letter3 <= 7'b0011001;
+				letter4 <= 7'b0000110;
+			end
+		3'b011:
+			begin
+				letter1 <= 7'b0000110;
+				letter2 <= 7'b0001100;
+				letter3 <= 7'b1000110;
+				letter4 <= 7'b0011001;
+			end
+		default:;
+		endcase
+end
+endmodule

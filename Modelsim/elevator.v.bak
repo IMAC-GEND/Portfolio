@@ -1,0 +1,76 @@
+module elevator(CLOCK_50, KEY, SW, HEX0, HEX1, HEX2, HEX3, LEDG);
+
+input CLOCK_50;
+input [3:0] KEY;
+input [2:0] SW;
+output [6:0] HEX0, HEX1, HEX2, HEX3;
+output [7:0] LEDG;
+
+reg [30:0] counter;
+reg [6:0] number0;
+reg [7:0] state;
+reg [2:0] current_floor = 3'b001;
+reg [2:0] target_floor = 3'b001;
+ 
+assign HEX0 = {1'b1, number0};
+assign HEX1 = {1'b1, number0};
+assign HEX2 = {1'b1, number0};
+assign HEX3 = {1'b1, number0};
+assign LEDG = state;
+	 
+parameter n1 = 7'b1111001;
+parameter n2 = 7'b0100100;
+parameter n3 = 7'b0110000;
+parameter n4 = 7'b0011001;
+	
+always @(posedge CLOCK_50)
+begin
+if (SW[0] == 1) begin
+            if (KEY[3] == 0) target_floor = 3'b100; // 4th floor
+            else if (KEY[2] == 0) target_floor = 3'b011; // 3rd floor
+            else if (KEY[1] == 0) target_floor = 3'b010; // 2nd floor
+            else if (KEY[0] == 0) target_floor = 3'b001; // 1st floor
+        end
+        else if (SW[1] == 1)
+		  begin
+            if (KEY[3] == 0) target_floor = 3'b100; // 4th floor
+            else if (KEY[2] == 0) target_floor = 3'b011; // 3rd floor
+            else if (KEY[1] == 0) target_floor = 3'b010; // 2nd floor
+            else if (KEY[0] == 0) target_floor = 3'b001; // 1st floor
+        end
+ 
+if(counter == 25000000)
+begin
+	if (SW[0] == 1 && SW[1] == 1) begin
+		
+	end
+	else if (current_floor < target_floor && SW[0] == 1)
+		current_floor = current_floor + 1;
+	else if (current_floor > target_floor && SW[1] == 1)
+		current_floor = current_floor - 1;
+
+	counter <= 0;
+end
+
+else
+begin
+	counter <= counter + 1;
+end	
+
+// HEX display logic
+        case (current_floor)
+            3'b100: number0 <= n4; // 4th floor
+            3'b011: number0 <= n3; // 3rd floor
+            3'b010: number0 <= n2; // 2nd floor
+            3'b001: number0 <= n1; // 1st floor
+            default: ; // Display all segments for unknown state
+        endcase
+        
+        // LEDG control logic (lights up for 3 seconds when reaching the desired floor)
+        if (current_floor == target_floor) begin
+            if (counter == 150_000_000) state <= 8'b00000000;
+				else if (counter == 0) state <= 8'b11111111;
+        end
+        else state <= 8'b00000000;
+    end				
+endmodule
