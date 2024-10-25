@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selecting Elements by ID</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Highlights element with ID mark
+            $("button").click(function(){
+                $("#mark").css("background", "yellow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>This is a heading</h2>
+
+    <p>This is a paragraph.</p>
+    <p id="mark">This ID attribute is highlighted.</p>
+    
+    <button>Click me</button>
+</body>
+</html>

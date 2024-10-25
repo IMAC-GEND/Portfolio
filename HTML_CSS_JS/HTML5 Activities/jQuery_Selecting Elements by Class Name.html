@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selecting Elements by Class Name</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".mark").css("background", "yellow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2 class="mark">This class heading is hightlighted</h2>
+
+    <p class="mark">This class paragraph highlighted.</p>
+    <p>This is another paragraph.</p>
+
+    <button>Click me</button>
+</body>
+</html>

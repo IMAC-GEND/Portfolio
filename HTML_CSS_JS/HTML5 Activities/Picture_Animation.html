@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic HTML Example</title>
+	<script language="JavaScript">
+		var timerID;
+		var x = 0;
+		var y = 0;
+		function BeginAnimation()
+		{
+			timerID = window.setInterval("ContinueAnimation()",50);
+		}
+		function ContinueAnimation()
+		{
+			x += 16;
+			MyPhoto.style.left = x + 'px';
+			y += 4;
+			MyPhoto.style.top = y + 'px';
+			if (x>280)
+			{
+				window.clearInterval(timerID);
+			}
+		}
+	</script>
+</head>
+<body onload="BeginAnimation()" marginheight="0" topmargin="0" leftmargin="0"><img id="MyPhoto" style="position:absolute; top:50px; left: 0px;" src="https://lh3.googleusercontent.com/wgTRslIWmXVEds04nrSDbtJXe5pt4jWJXN5hfS_9-qXE9UVY9QYe3vzoJNuaY4eTk3D5Oi7r0aCE3ZN57S7Dp6quz74rJ8Ja1Zaf1kkTU-8OvAFUUMoNrvjTIwKLM-LWM5vlmW50Zw=w2400" >
+</body>
+</html>

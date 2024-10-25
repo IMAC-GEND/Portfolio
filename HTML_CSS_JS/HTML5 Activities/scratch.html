@@ -1,0 +1,118 @@
+https://www.facebook.com/
+<button class="button button--flex place__button"></button>
+<!--==================== SPONSORS ====================-->
+<section class="sponsor section">
+    <div class="sponsor__container container grid">
+        <div class="sponsor__content">
+            <img src="assets/img/sponsors1.png" alt="" class="sponsor__img">
+        </div>
+        <div class="sponsor__content">
+            <img src="assets/img/sponsors2.png" alt="" class="sponsor__img">
+        </div>
+        <div class="sponsor__content">
+            <img src="assets/img/sponsors3.png" alt="" class="sponsor__img">
+        </div>
+        <div class="sponsor__content">
+            <img src="assets/img/sponsors4.png" alt="" class="sponsor__img">
+        </div>
+        <div class="sponsor__content">
+            <img src="assets/img/sponsors5.png" alt="" class="sponsor__img">
+        </div>
+    </div>
+</section>
+/*=============== SPONSORS ===============*/
+.sponsor__container {
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  justify-items: center;
+  row-gap: 3.5rem;
+}
+
+.sponsor__content:hover .sponsor__img {
+  filter: invert(0.5);
+}
+
+.sponsor__img {
+  width: 90px;
+  filter: invert(0.7);
+  transition: var(--img-transition);
+}
+--first-color-second: hsl(var(--hue-color), 54%, 12%);
+
+var(--body-color);
+box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+
+--first-color: hsl(var(--hue-color), 64%, 22%);
+  --first-color-second: hsl(var(--hue-color), 64%, 22%);
+  --first-color-alt: hsl(var(--hue-color), 64%, 15%);
+  --title-color: hsl(var(--hue-color), 64%, 18%);
+  --text-color: hsl(var(--hue-color), 24%, 35%);
+  --text-color-light: hsl(var(--hue-color), 8%, 60%);
+  --input-color: hsl(var(--hue-color), 24%, 97%);
+  --body-color: hsl(var(--hue-color), 100%, 99%);
+  --white-color: rgb(253, 253, 253);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
+
+  /*========== Variables Dark theme ==========*/
+body.dark-theme {
+  --first-color-second: hsl(var(--hue-color), 54%, 12%);
+  --title-color: hsl(var(--hue-color), 24%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 29%, 12%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+-1px 0 4px rgba(14, 55, 63, 0.15);
+
+
+<div class="footer__data">
+  <h3 class="footer__subtitle">About</h3>
+  <ul>
+      <li class="footer__item">
+          <a href="" class="footer__link">About Us</a>
+      </li>
+      <li class="footer__item">
+          <a href="" class="footer__link">Features</a>
+      </li>
+      <li class="footer__item">
+          <a href="" class="footer__link">New & Blog</a>
+      </li>
+  </ul>
+</div>
+
+<div class="footer__data">
+  <h3 class="footer__subtitle">Company</h3>
+  <ul>
+      <li class="footer__item">
+          <a href="" class="footer__link">Team</a>
+      </li>
+      <li class="footer__item">
+          <a href="" class="footer__link">Plan y Pricing</a>
+      </li>
+      <li class="footer__item">
+          <a href="" class="footer__link">Become a member</a>
+      </li>
+  </ul>
+</div>
+
+<div class="footer__data">
+  <h3 class="footer__subtitle">Support</h3>
+  <ul>
+      <li class="footer__item">
+          <a href="" class="footer__link">FAQs</a>
+      </li>
+      <li class="footer__item">
+          <a href="" class="footer__link">Support Center</a>
+      </li>
+      <li class="footer__item">
+          <a href="" class="footer__link">Contact Us</a>
+      </li>
+  </ul>
+</div>
+
+
+<div class="footer__content grid"></div>
+
+<p class="footer__copy">&#169; 2021 Bedimcode. All rigths reserved.</p>

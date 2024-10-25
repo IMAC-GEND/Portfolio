@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Custom Selector</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("tr:odd").css("background", "yellow");
+            $("tr:even").css("background", "orange");
+            $("p:first").css("background", "red");
+            $("p:last").css("background", "green");
+            $("form :text").css("background", "purple");
+            $("form :password").css("background", "blue");
+            $("form :submit").css("background", "violet");
+        });
+    </script>
+</head>
+<body>
+    <h3>Highlight table rows appearing at odd places:</h3>
+
+        <table border="1">
+            <tr>
+                <th>Company</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Company 1</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Company 2</td>
+                <td>Sweden</td>
+            </tr>
+            <tr>
+                <td>Company 3</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Company 4</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Company 5</td>
+                <td>UK</td>
+            </tr>
+        </table>
+    <p>This is first paragraph</p>
+    <p>This is second paragraph</p>
+    <p>This is third paragraph</p>
+
+    <form>
+        <label>First Name:</label>
+        <input type="text" name="first-name"><br><br>
+        <label>Password:</label>
+        <input type="password" name="password"><br><br>
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>

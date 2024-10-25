@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mouse Events</title>
+        <script src="jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("p").hover(function(){
+                $(this).css("background-color", "yellow");
+                }, function(){
+                $(this).css("background-color", "pink");
+              });
+            });
+            </script>
+    </head>
+    <body>
+        <p>This is hover() Method!</p>
+    </body>
+</html>

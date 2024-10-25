@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selecting Elements by Compound CSS Selector</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p.mark").css("background", "yellow");
+            $("#mark span").css("background", "yellow");
+            $("ul li").css("background", "yellow");
+            $("ul#mark li").css("background", "red");
+            $("ul.mark li").css("background", "green");
+            $('a[target="_blank"]').css("background", "yellow");
+        });
+    </script>
+</head>
+<body>
+    <p class="mark">Highlight only a paragraph elements with class mark.</p>
+    <p id="mark">Highlight only a span elements inside the element with ID mark.</p>
+    <p>This is one more paragraph.</p>
+    <ul>
+        <li>List item one</li>
+        <li>List item two</li>
+        <li>List item three</li>
+    </ul>
+    <ul id="mark">
+        <li>List item one</li>
+        <li><span>List item two</span></li>
+        <li>List item three</li>
+    </ul>
+    <ul class="mark">
+        <li>List item one</li>
+        <li>List item two</li>
+        <li>List item three</li>
+    </ul>
+    <p>Highlight all anchor elements with target blank. <a href="https://www.w3schools.com/html/" target="_blank">HTML tutorial</a></p>
+</body>
+</html>
