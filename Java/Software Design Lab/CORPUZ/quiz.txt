@@ -1,0 +1,29 @@
+
+Question: What is my name?
+Choice 1: Reimarc
+Choice 2: Imac
+Choice 3: Imacboi
+Choice 4: Davbz
+Correct Answer: Choice 1
+------------------------
+Question: dsd
+Choice 1: sa
+Choice 2: sa
+Choice 3: sc
+Choice 4: e
+Correct Answer: Choice 1
+------------------------
+Question: a
+Choice 1: b
+Choice 2: c
+Choice 3: d
+Choice 4: e
+Correct Answer: Choice 3
+------------------------
+Question: What is my name?
+Choice 1: gf
+Choice 2: reimarc
+Choice 3: imac
+Choice 4: genese
+Correct Answer: Choice 2
+------------------------
