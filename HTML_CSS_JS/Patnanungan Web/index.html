@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive Website Travel</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">DISCOVER</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Cover</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Discover</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">Places</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/home1.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Discover your place</span>
+                        <h1 class="home__data-title">The Island<br> of <b>PATNANUNGAN <br> QUEZON</b></h1>
+                        <a href="Magazine.html" class="button">Explore</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/amazingpatnanungan" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">best places to visit</span>
+                            <a href="Magazine.html" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="assets/img/home2.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">PATNANUNGAN ISLAND </h2>
+                        <div style = "text-align: justify"><p class="about__description">The municipality of Patnanungan was established on June 18, 1961.
+                            Patnanungan is an agricultural town where coconut and fish are the major products.
+                            The boot-shaped Patnanungan Island is a beach lover's delight found in Polillo Group of Islands. 
+                            Near the town proper is the long White Beach sectioned into different beach resorts, 
+                            each with fine white sand, clear blue waters, and a great view of the sunset. 
+                            At the southeast is the golden Compra Beach, while to its north is the red-bouldered Pulang Lupa Beach.<br><br>
+
+                            This island municipality came to be a part of the Philippine Archipelago through and by the three accepted theories 
+                            of the existing continents. These are the divine theory and the theories of evolution and diastrophism. 
+                            Ever since, this municipality is an integral part of the Uala Islands which is now of INFANTA - POLILLO GROUP. <br><br>
+
+                            It's name originated from various versions. Most accepted is that the name is derived from the word Katanungan. 
+                            Old folks of the early settlers believed that this was caused by the frequent and good venison sold to inhabitants 
+                            of the towns along Lamon Bay. Settlers of Patnanungan who goes to other towns to sell or barter the cured and 
+                            dried venison is always asked as to where they get plenty of venison and where is Patnanungan situated. 
+                            Because of this inquiries so frequently asked, it became a key word among old folks which gave rise to the 
+                            present name of Patnanungan.
+                        </p></div>
+                        <a href="https://www.zamboanga.com/z/index.php?title=Patnanungan,_Quezon,_Philippines" class="button">See more</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about1.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about2.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">TRAVEL GUIDE</h2>
+            <div style="text-align: center;">
+                <a href="https://www.google.com/maps/dir/13.9413957,121.6234471/patnanungan+quezon/@14.4871278,121.5674054,10z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x3399ad61cb66a927:0x614ed614b866c7c1!2m2!1d122.1859572!2d14.7896353!3e0">
+                <img src="assets/img/mapp.png" alt="" class="map">
+                </a>
+                <p class="map__description">
+                    <br>Are you looking for directions to Patnanungan, Quezon? <br>You may click the map or this button will transport you to Patnanungan. &nbsp;
+                    <a href="https://www.google.com/maps/dir/13.9413957,121.6234471/patnanungan+quezon/@14.4871278,121.5674054,10z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x3399ad61cb66a927:0x614ed614b866c7c1!2m2!1d122.1859572!2d14.7896353!3e0" class="button_tara" >Tara na!</a>
+                </p>
+            <br><br>
+                <h2>Passengers Schedule</h2><br>
+
+                <table class="center">
+                <tr>
+                    <th>Scheduled Day</th>
+                    <th>Usual Time</th>
+                <tr>
+                    <td>Sunday</td>
+                    <td>10 AM to 2 PM</td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>10 AM to 2 PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>10 AM to 2 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>10 AM to 2 PM</td>
+                </tr>
+                <tr>
+                    <td>Thursaday</td>
+                    <td>10 AM to 2 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>10 AM to 2 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>10 AM to 2 PM</td>
+                </tr>
+                </table><br>
+                <h2>Passenger Fare</h2><br>
+                <table class="center">
+                    <tr>
+                        <th>Fare</th>
+                        <th>Category</th>
+                    <tr>
+                        <td>Php 400</td>
+                        <td>Adult</td>
+                    </tr>
+                    <tr>
+                        <td>Php 350</td>
+                        <td>Students / Senior Citizen</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Additional Fare</th>
+                        <th>Per Baggage</th>
+                    <tr>
+                        <td>Php 40</td>
+                        <td>Papers</td>
+                    </tr>
+                    <tr>
+                        <td>Php 150</td>
+                        <td>Bags / Boxes</td>
+                    </tr>
+                    <tr>
+                        <td>Php 200</td>
+                        <td>Sack</td>
+                    </tr>
+                    <tr>
+                        <td>Php (hornal)</td>
+                        <td>Other baggage</td>
+                    </tr>
+                </table><br><br>
+                <h2>Service Van (For Lucena)</h2><br>
+                <table class="center">
+                    <tr>
+                        <th>Name</th>
+                        <th>Contact Number</th>
+                    <tr>
+                        <td>Clint Refazo</td>
+                        <td>0970 184 0162</td>
+                    </tr>
+                    <tr>
+                        <td>Kuya B-jay</td>
+                        <td>09+</td>
+                    </tr>
+                </table>
+                <table class="center">
+                    <tr>
+                        <td><div style="text-align: justify;">
+                            <br>You may take passenger vans or buses from areas like Laguna, Manila, or any portion of Quezon. 
+                            If you're coming from Lucena, there are service vans available to pick up straight at your house. 
+                            You can reach us using the information provided on this page. For destinations other than Lucena, 
+                            you can take the Infanta bus, which will drop you off in Real, where you will then ride a tricycle 
+                            to the Real port. A variety of passenger boats or ships departing from the Real port for various 
+                            portions of the Polillio group of islands. Simply ask a passenger who is waiting in line to travel 
+                            to Patnanungan town.<br><br>
+                            <strong>Note:</strong> <i>Please arrive at the Real port at least 1 hour before the scheduled departure time. 
+                            Because each day just one passenger departs. 
+                            So, from your hometown, I recommend a four-hour trip to Real port from 4AM to 7AM. "It's better to wait, than to be late"</i>
+                        </div><br></td>
+                    </tr>
+                </table>
+            </div><br><br><br>
+                <h2 class="section__title">SEAFOODS</h2>
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover1.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Alimango</h2>
+                                <span class="discover__description">“mud crab” or “mangrove crab”</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover2.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Net Fish</h2>
+                                <span class="discover__description">Inihaw na isda</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover3.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Surahan</h2>
+                                <span class="discover__description">It can cook inihaw, paksiw, adobo</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover4.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Sil-it</h2>
+                                <span class="discover__description">Sea shell (kabibe)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== EXPERIENCE ====================-->
+            <section class="experience section">
+                <h2 class="section__title">Patnanungan Geography</h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">5th</h2>
+                            <span class="experience__description">Class <br> Municipality</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">7</h2>
+                            <span class="experience__description">Local <br> Barangays</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">15,052	</h2>
+                            <span class="experience__description">Latest record<br> of Population</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="assets/img/experience1.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="assets/img/experience2.jpg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                        <div style="text-align: center;"><h2>PATNANUNGAN HYMN</h2><br>
+                    <p>
+                        Dito sa isla ng Patnanungan,<br>
+                        Isang bayang mutya sa Silanganan.<br>
+                        Ang buhay kahit na simple lamang,<br>
+                        Payapa't sagana ang kapaligiran.<br>
+                        Banayad simoy habagat amihan,<br>
+                        Animo'y perlas ang buhanginan.<br>
+                        Pag ito ay iyong narating,<br>
+                        Mapapatna sa ganda ng tanawin. <br><br>
+
+                        Patnanungan minamahal kong bayan.<br>
+                        Tahanan ng tuwa at kasiyahan.<br>
+                        Mamamayan ay magiliw kaninuman,<br>
+                        Masisipag at pala kaibigan.<br><br>
+
+                        Yamang dagat ay tunay na marami,<br>
+                        Alimango isda at kabibi.<br>
+                        Sa bukid man ika'y mawiwili,<br>
+                        Luntiang palay ang inaani.<br><br>
+
+                        Banayad simoy habagat amihan,<br>
+                        Animo'y perlas ang buhanginan.<br>
+                        Pag ito ay iyong narating,<br>
+                        Mapapatna sa ganda ng tanawin.<br><br>
+
+                        Patnanungan minamahal kong bayan.<br>
+                        Tahanan ng tuwa at kasiyahan.<br>
+                        Mamamayan ay magiliw kaninuman,<br>
+                        Masisipag at pala kaibigan.<br>
+                    </p>
+                </div>
+                <h2 class="section__title"><br><br>Video Tour</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Find out more with our video of the most beautiful and 
+                        pleasant places for you and your family.
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="assets/video/video.mp4" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PLACES ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title">Choose Your Place</h2>
+
+                <div class="place__container container grid">
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place1.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Villa Karine</h3>
+                                <span class="place__subtitle">Brgy. Pobalacion</span>
+                                <span class="place__price">See more...</span>
+                            </div>
+                        </div>
+
+                        <p><a href="https://www.facebook.com/VILLAKARRINEOFFICIAL"> <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button></a></p>
+                    </div>
+
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place2.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5,0</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Ninasawa Island</h3>
+                                <span class="place__subtitle">Bird Sanctuary</span>
+                                <span class="place__price">See more...</span>
+                            </div>
+                        </div>
+
+                        <p><a href="https://www.facebook.com/pages/Minasawa-Island-Bordeos-Quezon/358899074211595"> <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button></a></p>
+                    </div>
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place3.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,9</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Tinagong<br>Pantay Cave</h3>
+                                <span class="place__subtitle">Brgy. Luod</span>
+                                <span class="place__price">See more...</span>
+                            </div>
+                        </div>
+
+                        <p><a href="https://www.facebook.com/photo/?fbid=915365552341426&set=pcb.915370932340888"> <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button></a></p>
+                    </div>
+
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place4.jfif" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title"></h3>
+                                <span class="place__price">Pacabalu <br>Sandbar</span>
+                                <span class="place__subtitle">Near Minasawa <br>Island</span>
+                                <span class="place__price">See more...</span>
+                            </div>
+                        </div>
+
+                        <p><a href="https://www.facebook.com/travelistphilippines/photos/pcb.345870162742729/345862439410168"> <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button></a></p>
+                    </div>
+
+                    <!--==================== PLACES CARD 5 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place5.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Vivienne Transient House</h3>
+                                <span class="place__subtitle">Sitio Lumong</span>
+                                <span class="place__price">See more...</span>
+                            </div>
+                        </div>
+
+                        <p><a href="https://www.facebook.com/VivienneTransientHouse/"> <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button></a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SUBSCRIBE ====================-->
+            <section class="subscribe section">
+                <div class="subscribe__bg">
+                    <div class="subscribe__container container">
+                        <h2 class="section__title subscribe__title">LET'S PLAN YOUR TRIP</h2>
+                        <p class="subscribe__description">
+                            "Don't Listen To What They Say, Go See"<br>
+                            So what are you waiting for, 
+                            "Book With Us And Book It Out Of Here!"
+                        </p>
+    
+                        <form action="" class="subscribe__form">
+                            <input type="text" placeholder="Your name" class="subscribe__input">
+    
+                            <a href="tripPlan.html"><button class="button">
+                                Continue
+                            </a></button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div style="text-align: left;">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Note :</h3>
+                        <p class="footer__description">
+                            <i>If you have any details, photos, messages, or information you would like to add about Patnanungan Quezon, 
+                            you can email <a href = "mailto: rcorpuz@slsu.edu.ph">rcorpuz@slsu.edu.ph</a> for a more organized and informative website. Thank you!</i>
+                        </p>
+                        <br>
+                        <br>
+                        <hr>
+                        <h3 class="footer__Contact"><br>Contact us :<br><br></h3>
+                        <a href="https://www.facebook.com/amazingpatnanungan" target="_blank" class="footer__social">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank" class="footer__social">                                <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-rights">
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--=============== MAIN JS ===============-->
+<section class="footerr">
+
+    <div class="boxx-container">
+
+        <div class="boxx">
+            <h3>QUIK LINKS</h3>
+            <a href="home page.html">Home</a>
+            <a href="Magazine.html">Gallery</a>
+            <a href="THINGS-TO-DO.html">Activities</a>
+            <a href="tripPlan.html">Book</a>
+        </div>
+
+        <div class="boxx">
+            <h3>EXTRA LINKS</h3>
+            <a href="#contact">Ask questions</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy policy</a>
+        </div>
+
+        <div class="boxx">
+            <h3>CONTACT INFO</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +903-456-7890 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +941-222-3333 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> patnanungantourism@gmail.com </a>
+            <a href="#"> <i class="fas fa-map"></i> patnanungan quezon </a>
+        </div>
+
+        <div class="boxx">
+            <h3>FOLLOW US</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+  
+    </body>
+</html>

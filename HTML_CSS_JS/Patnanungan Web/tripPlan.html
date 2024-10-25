@@ -1,0 +1,296 @@
+<!DOCUMENT HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plan Your Trip</title>
+        <link rel="stylesheet" href="tripstyle.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    
+    </head>
+    <body>
+        <header class="header">
+            <img src="logo pats2.png" class="logo">
+        
+            <nav class="navbar">
+                <div id="nav-close" class="fas fa-times"></div>
+                <a href="home page.html">Home</a>
+                <a href="Magazine.html">Gallery</a>
+                <a href="THINGS-TO-DO.html">Activities</a>
+                <a href="#plan your trip">Book</a>
+                <a href="index.html">Discover</a>
+            </nav>
+        
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+        </header>
+
+        <div class="banner">
+            <center>
+                <!--<img class="pic" src="header07.png">-->
+                <header>PLAN YOUR TRIP</header>
+            </center>
+
+            <div class="progress-bar">
+                <ul>
+                    <li>
+                        <i class="icon uil uil-chat-bubble-user"></i>
+                        <div class="progress one">
+                            <p>1</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Information</p>
+                    </li>
+                    <li>
+                        <i class="icon uil uil-list-ol"></i>
+                        <div class="progress two">
+                            <p>2</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">People</p>
+                    </li>
+                    <li>
+                        <i class="icon uil uil-map"></i>
+                        <div class="progress three">
+                            <p>3</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Place</p>
+                    </li>
+                    <li>
+                        <i class="icon uil uil-calendar-alt"></i>
+                        <div class="progress four">
+                            <p>4</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Date</p>
+                    </li>
+                    <li>
+                        <i class="icon uil uil-kayak"></i>
+                        <div class="progress five">
+                            <p>5</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Activities</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="container">
+                <div class="form-frame">
+                    <form action="insert.php" method="POST">
+                        <div class="form first page-slide">
+                            <!--Personal Information-->
+                            <div class="personal information">
+                                <span class="title"><center>PERSONAL INFORMATION</center></span>
+
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Full Name</label>
+                                        <input type="text" placeholder="Enter name" name="full_name" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Email</label>
+                                        <input type="text" placeholder="Enter email" name="email" required>
+                                    </div>
+                                    
+                                    <div class="input-field">
+                                        <label>Phone Number</label>
+                                        <input type="number" placeholder="Enter phone number" name="phone_number" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="nextBtn0 next">
+                                <span class="btnText">Next</span>
+                            </button>
+                        </div>
+
+                        <div class="form second">
+                            <!--Number of People-->
+                            <div class="people number">
+                                <span class="title"><center>NUMBER OF PEOPLE</center></span>
+                            
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Adults</label>
+                                        <input type="number" placeholder="Enter number of adults" name="adults" required>
+                                    </div>
+
+
+                                    <div class="input-field">
+                                        <label>Teens</label>
+                                        <input type="number" placeholder="Enter number of teens" name="teens" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Children</label>
+                                        <input type="number" placeholder="Enter number of children" name="children" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="buttons">
+                                <button class="nextBtn1 next">
+                                    <span class="btnText">Next</span>
+                                </button>
+
+                                <button class="backBtn1 back">
+                                    <span class="btnText">Back</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form third">
+                            <!--Place-->
+                            <div class="place">
+                                <span class="title"><center>PLACE</center></span>
+                            
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Place</label>
+                                        <select name="place" required>
+                                            <option selected hidden value="">Select place</option>
+                                            <option>Villa Karine</option>
+                                            <option>Ninasawa Island</option>
+                                            <option>Tinagong Island Cave</option>
+                                            <option>Pacabalu Sandbar</option>
+                                            <option>Vivienne Transient House</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="buttons">
+                                <button class="nextBtn2 next">
+                                    <span class="btnText">Next</span>
+                                </button>
+
+                                <button class="backBtn2 back">
+                                    <span class="btnText">Back</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form fourth">
+                            <!--Date of Booking-->
+                            <div class="booking date">
+                                <span class="title"><center>DATE OF BOOKING</center></span>
+                                <div class="fields">
+                                    
+                                    <div class="input-field">
+                                        <label>Date of Arrival</label>
+                                        <input type="date" name="arrival_date" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Date of Discussion</label>
+                                        <input type="date" name="discussion_date" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Date of Departure</label>
+                                        <input type="date" name="departure_date" required>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="buttons">
+                                <button class="nextBtn3 next">
+                                    <span class="btnText">Next</span>
+                                </button>
+                                
+                                <button class="backBtn3 back">
+                                    <span class="btnText">Back</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form fifth">
+                            <!--Activities-->
+                            <div class="activities">
+                                <span class="title"><center>ACTIVITIES</center></span>
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Activities</label>
+                                        <select name="activities" required>
+                                            <option selected hidden value="">Select activities</option>
+                                            <option>Beach Activities</option>
+                                            <option>Cave Exploration</option>
+                                            <option>Island Hopping</option>
+                                            <option>Artworks with Shells</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <div class="buttons">
+                                <button class="submit">
+                                    <span class="btnText">SUBMIT</span>
+                                </button>
+
+                                <button class="backBtn4 back">
+                                    <span class="btnText">Back</span>
+                                </button>
+                            </div>   
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <section class="footer">
+
+            <div class="box-container">
+        
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="home page.html">Home</a>
+                    <a href="Magazine.html">Gallery</a>
+                    <a href="THINGS-TO-DO.html">Activities</a>
+                    <a href="tripPlan.html">Book</a>
+                    <a href="index.html">Discover</a>
+                </div>
+        
+                <div class="box">
+                    <h3>Axtra Links</h3>
+                    <a href="#">Ask Questions</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+        
+                <div class="box">
+                    <h3>Contact Info</h3>
+                    <a href="#"> <i class="fas fa-phone"></i> +903-456-7890 </a>
+                    <a href="#"> <i class="fas fa-phone"></i> +941-222-3333 </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> patnanungantourism@gmail.com </a>
+                    <a href="#"> <i class="fas fa-map"></i> Patnanungan Quezon </a>
+                </div>
+        
+                <div class="box">
+                    <h3>Follow Us</h3>
+                    <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+                    <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+                    <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+                </div>
+        
+            </section>
+        
+        </div>
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="tripscript.js"></script>
+        
+    </body>
+</html>
