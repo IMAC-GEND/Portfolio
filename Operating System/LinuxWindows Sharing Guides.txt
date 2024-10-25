@@ -1,0 +1,77 @@
+LINUX & WINDOWS CONNECTION:
+
+ping <ip address>
+dnf update
+sudo dnf install samba
+sudo systemctl enable --now smb
+sudo systemctl status --now smb
+sudo dnf install samba-client
+sudo dnf install samba-common
+sudo nano /etc/samba/smb.conf
+sudo mkdir -p /srv/samba/share
+sudo chmod -R 0777 /srv/samba/share
+sudo systemctl restart smb nmb
+
+CONNECTION OF IP ADDRESS IN LINUX AND WINDOWS:
+
+In Windows if access denied:
+NOTE: Make sure that the advanced sharing settings>Password protected sharing is OFF! or;
+Terminal of Linux:
+	sudo smbpasswd -a adminuser
+	NOTE: username: adminuser
+	      password: adminuser
+	sudo systemctl restart smb
+
+To access Windows the created file of Linux:
+chmod 0777 /home/adminuser/Downloads/filename
+
+FOR PRINTING:
+
+sudo dnf install cups
+sudo dnf install hplip
+sudo dnf install lpd
+sudo lpadmin -p <printer name> -v lpd://<win ip address>/<printer name> -E
+
+FIREFOX in Linux:
+localhost:631
+administration>Add Printer>username/password>LPD/LPR
+lpd://<win ip address>/<printer name>
+Name: 
+Check > Share This Printer
+Find printer driver ex: Epson
+
+For Wiundows printing:
+Control Panel>Programs and Features>
+Print and Document Services
+Check: LPD Print Services
+
+Installing printer in Windows:
+Conrol Panel>Devices and Printers
+Right click printer>Sharing>Check: Share this Printer>Change Printer Share name
+NOTE: Dapat kasama ng makikita/lalabas sa Networks na sharable files ng Windows
+
+
+SYSTEM CALL:
+
+Choose a System Call then create a code in C program. 
+Save the code in text file ".c".
+
+For Linux:
+In sharable folder:
+Create file.c
+Terminal: gcc -o file file.c
+	: ./file
+
+For Windows:
+Note: Intall mingw in browser
+Netwrok: \\192.168.1.1
+Public>got to cmd
+Command promt: gcc -o file file.c
+	     : file.exe
+Note: If Access denied while executing
+Terminal of Linux:
+	: cd /srv/samba/share
+	: ls -al
+	: sudo chmod 0777 file.exe
+	: ls -al
+Back to Windows cmd: file.exe
